@@ -1,0 +1,21 @@
+body{
+    background-color: azure;
+}
+
+.create{
+    text-align: right;
+}
+
+h1{
+    text-align: center;
+    color:rgb(0, 4, 255);
+    text-shadow: 5px 5px #99c4ec;
+}
+
+h2{
+    color:rgb(0, 4, 255);
+}
+
+.caution{
+    font-weight: bold;
+}

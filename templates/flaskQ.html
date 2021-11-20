@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>HELLO</title>
+</head>
+
+<body>
+    <h1>Hello from flaskQ.html</h1>
+    <p class="create">作成日:2021-11-19</p>
+
+    <h2 id="list">＜リスト＞</h2>
+    <ul>{% for x in list%}
+        <li>{{x}}</li>
+        {% endfor%}
+    </ul>
+
+    <h2>＜辞書＞</h2>
+    <div>
+        <div class="caution">ニックネーム</div>{{"%s"%(dictionary["nickname"])}}<br>
+    </div>
+    <div>
+        <div class="caution">年齢</div>{{"%s"%(dictionary["age"])}}<br>
+    </div>
+    <div>
+        <div class="caution">住所</div>{{"%s？"%(dictionary["address"])}}
+    </div>
+
+    <h2>＜秘密の言葉＞</h2>
+    {% if command %}
+    <div>↑↑↓↓←→←→BA</div>
+    {% else %}
+    <div>ヒント:分かる人には分かるもの</div>
+    {% endif %}
+</body>
+
+</html>
